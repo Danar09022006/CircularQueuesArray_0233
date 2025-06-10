@@ -19,18 +19,17 @@ public:
       cin >> num;
       cout << endl;
 
-   
-   
-   
-   
-   
-
-        // cek apakah antrian kosong
-        if (FRONT == -1) {
-            FRONT =0;
-            REAR = 0;
+             // cek apakah antrian penuh
+     if ((FRONT == 0 && REAR == max -1) || (FRONT == REAR + 1)) {
+         cout << "\nQueue overflow\n";
+         return;
         }
-        else {
+        
+        
+        
+        
+        
+        
          // jika REAR berada di posisi terakhir array, kembali ke array awal
         if (REAR == max - 1)
             REAR = 0;
