@@ -24,19 +24,19 @@ public:
          cout << "\nQueue overflow\n";
          return;
         }
-        
-        
-        
-        
-        
-        
-         // jika REAR berada di posisi terakhir array, kembali ke array awal
-        if (REAR == max - 1)
-            REAR = 0;
-        else
-            REAR = REAR + 1;
+        // cek apakah antrian kosong
+    if (FRONT == -1) {
+        FRONT =0;
+        REAR = 0;
         }
-        queue_array[REAR] = num;
+    else {
+        
+        
+        
+        
+        
+        
+        
     }
 
     void remove() {
